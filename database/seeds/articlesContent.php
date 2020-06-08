@@ -4,23 +4,22 @@ use Illuminate\Database\Seeder;
 
 class articlesContent extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
-    public function run()
-    {
+
+    public function run() {
+        $date = new DateTime('now');
         DB::table('articles')->insert([
             'id' => 1,
-            'page_id' => 1,
-            'type' => Str::random(10),
-            'title' => Str::random(10),
-            'subtitle' => Str::random(10),
-            'text' => Str::random(10),
-            'img_url' => Str::random(10),
-            'author' => Str::random(10),
-            'edit_permission_lvl' => 1
+            'page_id' => 100,
+            'type' => 'Article',
+            'title' => 'CORONA update 8 mei 2020',
+            'subtitle' => '',
+            'text' => 'In overleg met de depot beheerder is besloten om het depot per zaterdag 16 mei weer open te stellen, 13h00-15h00.',
+            'img_url' => '/img/picture_1.png',
+            'author' => 'Steven Kluft',
+            'edit_permission_lvl' => 1,
+            'created_at' => $date,
+            'updated_at' => $date
         ]);
     }
+
 }

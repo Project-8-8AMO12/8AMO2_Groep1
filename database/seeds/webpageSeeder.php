@@ -9,14 +9,16 @@ class webpageSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
+    public function run() {
+        $date = new DateTime('now');
         DB::table('webpages')->insert([
-            'page_id' => 1,
-            'type' => Str::random(10),
+            'page_id' => 100,
+            'type' => 'article',
             'editable' => 1,
-            'title' => Str::random(10),
-            'subtitle' => Str::random(10)
+            'title' => 'CORONA update 8 mei 2020',
+            'subtitle' => 'Informatie over Corona over Imkersleiden',
+            'created_at' => $date,
+            'updated_at' => $date
         ]);
     }
 }
