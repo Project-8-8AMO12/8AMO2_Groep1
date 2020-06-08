@@ -12,5 +12,57 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.home');
+});
+
+Route::get('/activiteiten', function () {
+    return view('pages.activiteiten');
+});
+
+Route::get('/agenda', function () {
+    return view('pages.agenda');
+});
+
+Route::get('/bijengezondheid', function () {
+    return view('pages.bijengezondheid');
+});
+
+Route::get('/bijenstal', function () {
+    return view('pages.bijenstal');
+});
+
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+
+Route::get('/cursussen', function () {
+    return view('pages.cursussen');
+});
+
+Route::get('/fotosvideos', function () {
+    return view('pages.fotosvideos');
+});
+
+Route::get('/lidworden', function () {
+    return view('pages.lidworden');
+});
+
+Route::get('/nieuws', function () {
+    return view('pages.nieuws');
+});
+
+Route::get('/vereniging', function () {
+    return view('pages.vereniging');
+});
+
+Route::get('/winkel', function () {
+    return view('pages.winkel');
+});
+
+Route::get('/zwermgezien', function () {
+    return view('pages.zwermgezien');
+});
+
+Route::get('/stretselaar', function () {
+    return view('pages.stretselaar');
 });
