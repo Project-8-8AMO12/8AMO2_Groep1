@@ -4,11 +4,7 @@ use Illuminate\Database\Seeder;
 
 class webpageSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+
     public function run() {
         $date = new DateTime('now');
         DB::table('webpages')->insert([
