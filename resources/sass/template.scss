@@ -7,14 +7,37 @@
      list-style: none;
 }
 
-#footer_id li{
-    color: black;
+#footer_id a{
+    color: white;
 }
+
 
 #top_nav_main {
     list-style: none;
 }
 
 .middle_background_color {
-    background-color: #fffffa!important;
+    background-color: #333333!important;
+}
+
+.navbar {
+    background-color: #333333!important; 
+}
+
+.top-nav a{
+    color: white!important;
+}
+
+#navbarNav a{
+    font-family: 'Open Sans', sans-serif!important;
+    font-size: 2em;
+}
+
+#navbarNav h1 {
+    color: white;
+    margin-top: .3em;
+}
+
+.copyright_text {
+    color: white;
 }
