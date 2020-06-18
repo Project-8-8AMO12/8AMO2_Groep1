@@ -1,8 +1,6 @@
 @section("footer")
-<nav class="container mb-3">
-    <div>
-        <h1 class="text-center mb-5">ImkersLeiden</h1>
-    </div>
+<div class="border-top mb-4"></div>
+<nav class="container mb-3 ">
     <div class="d-md-flex" id="footer_id">
         <ul class="col-12 col-md text-center">
             <li class="mb-3"><a href="/activiteiten">Activiteiten</a></li>
@@ -22,8 +20,8 @@
         </ul>
     </div>
 </nav>
-<div class="border-top">
-    <p class="text-center mt-3">
+<div>
+    <p class="text-center mt-3 copyright_text">
         ©
         <script>
             var currentTime = new Date()
