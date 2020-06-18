@@ -66,3 +66,7 @@ Route::get('/zwermgezien', function () {
 Route::get('/stretselaar', function () {
     return view('pages.stretselaar');
 });
+
+Route::get('/adminpanel', function () {
+    return view('pages.cms');
+});

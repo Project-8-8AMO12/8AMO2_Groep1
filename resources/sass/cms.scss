@@ -1,0 +1,17 @@
+.containerTest {
+    background-color: #333;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.draggable {
+    padding: 1rem;
+    background-color: white;
+    border: 0.5px solid #1b1e21;
+    border-radius: 2vw;
+    cursor: move;
+}
+
+.draggable.dragging {
+    opacity: .5;
+}

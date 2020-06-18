@@ -10930,7 +10930,6 @@ a.text-dark:focus {
 
 #main_template_class {
   min-height: 100vh;
-  height: 100vh;
 }
 
 #footer_id ul {
@@ -10947,5 +10946,23 @@ a.text-dark:focus {
 
 .middle_background_color {
   background-color: #fffffa !important;
+}
+
+.containerTest {
+  background-color: #333;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.draggable {
+  padding: 1rem;
+  background-color: white;
+  border: 0.5px solid #1b1e21;
+  border-radius: 2vw;
+  cursor: move;
+}
+
+.draggable.dragging {
+  opacity: 0.5;
 }
 
