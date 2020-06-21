@@ -1,8 +1,9 @@
 @extends('pages.components.main')
 
 @section("body")
+    <div class="container">
     <div class="mt-3">
-        <h1>Admin panel</h1>
+        <h1 class="text-white">Admin panel</h1>
         <ul class="nav nav-tabs">
             <li class="nav-item">
                 <a href="#artikel" class="nav-link active" role="tab" data-toggle="tab">Artikel</a>
@@ -148,7 +149,63 @@
                     <textarea class="form-control" draggable="true" ondragstart="drag(event)" id="drag1">Hier komen alle artikelen4</textarea>
                 </div>
             </div>
+            <button type="submit" name="submit-alert" class="btn btn-primary mt-4">Bewerk</button>
         </div>
-        <script src="resources/js/cms.js"></script>
+    </div>
+        <script>
+            const draggables = document.querySelectorAll('.draggable');
+            const containers = document.querySelectorAll('.drag-container');
+
+            draggables.forEach(draggable => {
+                draggable.addEventListener('dragstart', () => {
+                    draggable.classList.add('dragging')
+                })
+
+                draggable.addEventListener('dragend', () => {
+                    draggable.classList.remove('dragging');
+                    setPos();
+                })
+            })
+
+            containers.forEach(container => {
+                container.addEventListener('dragover', e => {
+                    e.preventDefault()
+
+                    const afterElement = getDragAfterElement(container, e.clientY)
+                    const draggable = document.querySelector('.dragging')
+
+                    if (afterElement == null) {
+                        container.appendChild(draggable)
+                    } else {
+                        container.insertBefore(draggable, afterElement)
+                    }
+
+                })
+            })
+
+            function getDragAfterElement(container, y) {
+                const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
+
+                return draggableElements.reduce((closest, child) => {
+                    const box = child.getBoundingClientRect()
+                    const offset = y - box.top - box.height / 2
+                    if (offset < 0 && offset > closest.offset) {
+                        return { offset: offset, element: child }
+                    } else {
+                        return closest
+                    }
+                }, { offset: Number.NEGATIVE_INFINITY }).element
+            }
+
+            function setPos() {
+                let a = document.querySelector('.drag-container').children;
+                let b = Array.from(a);
+                let c = 1;
+                b.forEach((item) => {
+                    item.setAttribute('pos', c);
+                    c++;
+                });
+            }
+        </script>
 @stop
 
