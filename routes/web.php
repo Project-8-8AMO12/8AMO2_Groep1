@@ -27,9 +27,11 @@ Route::get('/bijengezondheid', function () {
     return view('pages.bijengezondheid');
 });
 
-Route::get('/bijenstal', function () {
-    return view('pages.bijenstal');
-});
+Route::get('/bijenstal', 'showContent@showContentNow')->name()
+
+//Route::get('/bijenstal', function () {
+//    return view('pages.bijenstal');
+//});
 
 Route::get('/contact', function () {
     return view('pages.contact');
