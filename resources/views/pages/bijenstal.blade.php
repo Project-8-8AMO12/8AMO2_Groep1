@@ -1,5 +1,8 @@
 @extends('pages.components.main')
 
+@section('title', 'Bijenstal')
+
+
 @section("body")
         <div class="container" style="margin: 50px auto;">
             <div class="row">
