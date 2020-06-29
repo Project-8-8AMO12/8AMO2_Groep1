@@ -15,7 +15,7 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('page_id')->unsigned();
+            $table->bigInteger('page_id')->nullable()->unsigned();
             $table->string('type');
             $table->string('title');
             $table->string('subtitle');

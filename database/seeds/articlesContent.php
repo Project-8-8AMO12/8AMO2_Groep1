@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class articlesContent extends Seeder
 {
@@ -8,10 +9,9 @@ class articlesContent extends Seeder
     public function run()
     {
         $date = new DateTime('now');
-
         // Home
         DB::table('articles')->insert([
-            'id' => 2,
+            'id' => 1,
             'page_id' => 1,
             'type' => 'Alert',
             'title' => 'CORONA update 8 mei 2020',
@@ -25,7 +25,7 @@ class articlesContent extends Seeder
         ]);
 
         DB::table('articles')->insert([
-            'id' => 3,
+            'id' => 2,
             'page_id' => 1,
             'type' => 'Alert',
             'title' => 'CORONA update 31 maart 2020',
@@ -39,7 +39,7 @@ class articlesContent extends Seeder
         ]);
 
         DB::table('articles')->insert([
-            'id' => 4,
+            'id' => 3,
             'page_id' => 1,
             'type' => 'Article',
             'title' => 'De imkergroep Leiden',
@@ -53,7 +53,7 @@ class articlesContent extends Seeder
         ]);
 
         DB::table('articles')->insert([
-            'id' => 5,
+            'id' => 4,
             'page_id' => 1,
             'type' => 'Article',
             'title' => 'Wat we al zo doen',
@@ -78,13 +78,27 @@ class articlesContent extends Seeder
         ]);
 
         DB::table('articles')->insert([
-            'id' => 6,
+            'id' => 5,
             'page_id' => 1,
             'type' => 'Side_img_card',
             'title' => 'Heempark',
             'subtitle' => '',
             'text' => 'In het Heempark, gelegen aan de Oegstgeesterweg te Leiden, staat een overdekte bijenstal, waar verschillende bijenkorven en kasten staan opgesteld. Daaronder een demonstratiekast van plexiglas. Deze fraaie stal is voor het publiek op afspraak toegankelijk.',
-            'img_url' => '',
+            'img_url' => 'images/picture_1.png',
+            'author' => 'Unknown',
+            'edit_permission_lvl' => 1,
+            'created_at' => $date,
+            'updated_at' => $date
+        ]);
+
+        DB::table('articles')->insert([
+            'id' => 6,
+            'page_id' => 1,
+            'type' => 'Side_img_card',
+            'title' => 'Koninginneweg te Noordwijkerhout',
+            'subtitle' => '',
+            'text' => 'Aan de Koninginneweg te Noordwijkerhout bevindt zich ook een stal van de vereniging.',
+            'img_url' => 'images/picture_2.png',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
@@ -95,10 +109,10 @@ class articlesContent extends Seeder
             'id' => 7,
             'page_id' => 1,
             'type' => 'Side_img_card',
-            'title' => 'Heempark',
+            'title' => 'De Merenwijk',
             'subtitle' => '',
-            'text' => 'In het Heempark, gelegen aan de Oegstgeesterweg te Leiden, staat een overdekte bijenstal, waar verschillende bijenkorven en kasten staan opgesteld. Daaronder een demonstratiekast van plexiglas. Deze fraaie stal is voor het publiek op afspraak toegankelijk.',
-            'img_url' => '',
+            'text' => 'Sinds 1991 is er een bijenstal nabij de kinderboerderij in de Merenwijk, met een aantal bijenvolken in kasten.',
+            'img_url' => 'images/picture_3.png',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
@@ -109,38 +123,10 @@ class articlesContent extends Seeder
             'id' => 8,
             'page_id' => 1,
             'type' => 'Side_img_card',
-            'title' => 'Koninginneweg te Noordwijkerhout',
-            'subtitle' => '',
-            'text' => 'Aan de Koninginneweg te Noordwijkerhout bevindt zich ook een stal van de vereniging.',
-            'img_url' => '',
-            'author' => 'Unknown',
-            'edit_permission_lvl' => 1,
-            'created_at' => $date,
-            'updated_at' => $date
-        ]);
-
-        DB::table('articles')->insert([
-            'id' => 9,
-            'page_id' => 1,
-            'type' => 'Side_img_card',
-            'title' => 'De Merenwijk',
-            'subtitle' => '',
-            'text' => 'Sinds 1991 is er een bijenstal nabij de kinderboerderij in de Merenwijk, met een aantal bijenvolken in kasten.',
-            'img_url' => '',
-            'author' => 'Unknown',
-            'edit_permission_lvl' => 1,
-            'created_at' => $date,
-            'updated_at' => $date
-        ]);
-
-        DB::table('articles')->insert([
-            'id' => 10,
-            'page_id' => 1,
-            'type' => 'Side_img_card',
             'title' => 'Polderpark Cronesteijn',
             'subtitle' => '',
             'text' => 'Ten slotte staat er een bijenstal in het Polderpark Cronesteijn.',
-            'img_url' => '',
+            'img_url' => 'images/picture_4.png',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
             'created_at' => $date,

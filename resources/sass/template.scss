@@ -1,6 +1,5 @@
 #main_template_class {
     min-height: 100vh;
-    height: 100vh;
 }
 
 #footer_id ul{
@@ -14,6 +13,7 @@
 
 #top_nav_main {
     list-style: none;
+    background-color: #333333!important;
 }
 
 .middle_background_color {
@@ -21,7 +21,7 @@
 }
 
 .navbar {
-    background-color: #333333!important; 
+    background-color: #333333!important;
 }
 
 .top-nav a{
@@ -40,4 +40,12 @@
 
 .copyright_text {
     color: white;
+}
+
+.opsomming {
+    list-style: none;
+}
+
+.opsomming li {
+    margin-bottom: 1.5em;
 }

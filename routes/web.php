@@ -11,9 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.home');
-});
+//Route::get('/', function () {
+//    return view('pages.home');
+//});
+
+Route::get('/', 'HomeController@getArticles');
 
 Route::get('activiteiten', 'activiteitenController@getContent');
 
