@@ -156,7 +156,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '1'
         ]);
 
         DB::table('articles')->insert([
@@ -170,7 +171,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '2'
         ]);
 
 
@@ -189,7 +191,8 @@ Verder ontvangen cursisten tijdens de cursus het tijdschrift ‘Bijen houden’ 
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '1'
         ]);
 
         DB::table('articles')->insert([
@@ -204,7 +207,8 @@ Kosten van de Basiscursus Bijenteelt zijn € 237,50',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '2'
         ]);
 
         DB::table('articles')->insert([
@@ -218,7 +222,8 @@ Kosten van de Basiscursus Bijenteelt zijn € 237,50',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '3'
         ]);
 
         DB::table('articles')->insert([
@@ -232,7 +237,8 @@ Kosten van de Basiscursus Bijenteelt zijn € 237,50',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '4'
         ]);
 
         // De Vereniging
@@ -251,7 +257,8 @@ Donateurs ontvangen ‘De Stertselaar’.
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '1'
         ]);
 
         DB::table('articles')->insert([
@@ -267,7 +274,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '2'
         ]);
 
         DB::table('articles')->insert([
@@ -280,7 +288,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '3'
         ]);
 
         DB::table('articles')->insert([
@@ -293,7 +302,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '4'
         ]);
 
         //Zwerm Gezien?
@@ -309,7 +319,8 @@ Soms kruipt een zwerm in spouwmuren, schoorstenen en tussen de muren of aftimmer
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '1'
         ]);
 
         DB::table('articles')->insert([
@@ -327,7 +338,8 @@ Zoek op het internet eventueel een plaatje van een honingbij en hommels (er zijn
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '2'
         ]);
 
         DB::table('articles')->insert([
@@ -344,7 +356,8 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '3'
         ]);
 
         //Lid Worden
@@ -359,7 +372,8 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '1'
         ]);
 
         DB::table('articles')->insert([
@@ -372,7 +386,8 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '2'
         ]);
 
         //Agenda
@@ -391,7 +406,8 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '1'
         ]);
 
         //De Bijenstal
@@ -407,7 +423,8 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
-            'updated_at' => $date
+            'updated_at' => $date,
+            'pos' => '1'
         ]);
 
     }
