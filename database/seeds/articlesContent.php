@@ -384,6 +384,21 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
         //Agenda
 
         //Nieuws
+        DB::table('articles')->insert([
+            'id' => 25,
+            'page_id' => 7,
+            'type' => '',
+            'title' => 'De laatste nieuwtjes',
+            'subtitle' => 'Zo blijf je op de hoogte',
+            'text' => '
+Ook in 2020 gaat de basis cursus imkeren weer van start. De cursus is zoals altijd vol en de whatsapp groepen zijn aangemaakt. Begin maart beginnen we. Met het zachte weer dat we nu begin februari hebben zullen we de les-volken extra in de gaten moeten houden!
+Tijdens de controle begin januari bleek één volk het niet overleefd te hebben, maar er zijn er nog gelukkig genoeg om les te kunnen geven.
+',
+            'author' => 'Steven Kluft',
+            'edit_permission_lvl' => 1,
+            'created_at' => $date,
+            'updated_at' => $date
+        ]);
 
         //De Bijenstal
         DB::table('articles')->insert([
@@ -400,15 +415,6 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
             'created_at' => $date,
             'updated_at' => $date
         ]);
-
-        //De winkel
-
-        //De Stertselaar
-
-        //Foto's en video's
-
-        //Contact
-
 
     }
 }

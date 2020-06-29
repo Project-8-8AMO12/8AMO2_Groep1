@@ -16,7 +16,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="col-md-12">
-                        <p class="text-white" style="font-size: 1.6em;" ">{{ $article[0]->text }}
+                        <p class="text-white" style="font-size: 1.6em;">{{ $article[0]->text }}
                         </p>
                     </div>
                 </div>
