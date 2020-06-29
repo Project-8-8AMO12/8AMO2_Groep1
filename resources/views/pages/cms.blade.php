@@ -44,14 +44,14 @@
                         <option value="2" <?php if ($current_url == 2) { echo "selected";} ?>>Activtieiten</option>
                         <option value="3" <?php if ($current_url == 3) { echo "selected";} ?>>Cursussen</option>
                         <option value="4" <?php if ($current_url == 4) { echo "selected";} ?>>De vereniging</option>
-                        <option value="5" <?php if ($current_url == 5) { echo "selected";} ?>>De winkel</option>
-                        <option value="6" <?php if ($current_url == 6) { echo "selected";} ?>>Foto's en Video's</option>
-                        <option value="7" <?php if ($current_url == 7) { echo "selected";} ?>>Bijengezondheid</option>
-                        <option value="8" <?php if ($current_url == 8) { echo "selected";} ?>>Zwerm Gezien?</option>
-                        <option value="9" <?php if ($current_url == 9) { echo "selected";} ?>>Lid worden</option>
-                        <option value="10" <?php if ($current_url == 10) { echo "selected";} ?>>Agenda</option>
-                        <option value="11" <?php if ($current_url == 11) { echo "selected";} ?>>Nieuws</option>
-                        <option value="12" <?php if ($current_url == 12) { echo "selected";} ?>>De stretselaar</option>
+                        <option value="5" <?php if ($current_url == 5) { echo "selected";} ?>>Zwerm gezien?</option>
+                        <option value="6" <?php if ($current_url == 6) { echo "selected";} ?>>Lid worden</option>
+                        <option value="7" <?php if ($current_url == 7) { echo "selected";} ?>>Agenda</option>
+                        <option value="8" <?php if ($current_url == 8) { echo "selected";} ?>>Nieuws</option>
+                        <option value="9" <?php if ($current_url == 9) { echo "selected";} ?>>De bijenstal</option>
+                        <option value="10" <?php if ($current_url == 10) { echo "selected";} ?>>De winkel</option>
+                        <option value="11" <?php if ($current_url == 11) { echo "selected";} ?>>De stretselaar</option>
+                        <option value="12" <?php if ($current_url == 12) { echo "selected";} ?>>Foto's en video's</option>
                         <option value="13" <?php if ($current_url == 13) { echo "selected";} ?>>Contact</option>
                     </select>
                 </div>
@@ -110,14 +110,14 @@
                         <option value="2">Activtieiten</option>
                         <option value="3">Cursussen</option>
                         <option value="4">De vereniging</option>
-                        <option value="5">De winkel</option>
-                        <option value="6">Foto's en Video's</option>
-                        <option value="7">Bijengezondheid</option>
-                        <option value="8">Zwerm Gezien?</option>
-                        <option value="9">Lid worden</option>
-                        <option value="10">Agenda</option>
-                        <option value="11">Nieuws</option>
-                        <option value="12">De stretselaar</option>
+                        <option value="5">Zwerm Gezien?</option>
+                        <option value="6">Lid worden</option>
+                        <option value="7">Agenda</option>
+                        <option value="8">Nieuws</option>
+                        <option value="9">De bijenstal</option>
+                        <option value="10">De winkel</option>
+                        <option value="11">De stretselaar</option>
+                        <option value="12">Foto's en Video's</option>
                         <option value="13">Contact</option>
                     </select>
                 </div>
@@ -146,18 +146,18 @@
                         <span class="input-group-text">Selecteer webpagina</span>
                     </div>
                     <select id="inputState" name="page_id" class="form-control">
-                        <option value="1">Home</option>
+                        <option value="1" selected>Home</option>
                         <option value="2">Activtieiten</option>
                         <option value="3">Cursussen</option>
                         <option value="4">De vereniging</option>
-                        <option value="5">De winkel</option>
-                        <option value="6">Foto's en Video's</option>
-                        <option value="7">Bijengezondheid</option>
-                        <option value="8">Zwerm Gezien?</option>
-                        <option value="9">Lid worden</option>
-                        <option value="10">Agenda</option>
-                        <option value="11">Nieuws</option>
-                        <option value="12">De stretselaar</option>
+                        <option value="5">Zwerm Gezien?</option>
+                        <option value="6">Lid worden</option>
+                        <option value="7">Agenda</option>
+                        <option value="8">Nieuws</option>
+                        <option value="9">De bijenstal</option>
+                        <option value="10">De winkel</option>
+                        <option value="11">De stretselaar</option>
+                        <option value="12">Foto's en Video's</option>
                         <option value="13">Contact</option>
                     </select>
                 </div>

@@ -297,8 +297,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
             'page_id' => 4,
             'type' => '',
             'title' => 'Natuur en milieu',
-            'subtitle' => 'Bijenhouden is een echte natuurhobby: voor het imkeren bent u afhankelijk van het weer voor een goede honingoogst. Door het gebruik van chemische gewasbeschermingsmiddelen en het voorkomen van monocultures in de landbouw, zijn veel andere bestuivende insekten uit ons milieu verdwenen. Hun taak wordt nu overgenomen door de honingbij, zodat bijvoorbeeld heesters in plantsoenen dankzij de bijen ‘s winters bessen dragen, en er op die manier voor zorgen dat veel vogelsoorten in onze steden en dorpen kunnen overwinteren. Op hun manier dragen honingbijen dus bij aan de instandhouding van de flora en fauna.',
-            'text' => '',
+            'subtitle' => '',
+            'text' => 'Bijenhouden is een echte natuurhobby: voor het imkeren bent u afhankelijk van het weer voor een goede honingoogst. Door het gebruik van chemische gewasbeschermingsmiddelen en het voorkomen van monocultures in de landbouw, zijn veel andere bestuivende insekten uit ons milieu verdwenen. Hun taak wordt nu overgenomen door de honingbij, zodat bijvoorbeeld heesters in plantsoenen dankzij de bijen ‘s winters bessen dragen, en er op die manier voor zorgen dat veel vogelsoorten in onze steden en dorpen kunnen overwinteren. Op hun manier dragen honingbijen dus bij aan de instandhouding van de flora en fauna.',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
             'created_at' => $date,
@@ -394,7 +394,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
 
         //Nieuws
         DB::table('articles')->insert([
-            'id' => 25,
+            'id' => 26,
             'page_id' => 7,
             'type' => '',
             'title' => 'De laatste nieuwtjes',
@@ -413,7 +413,7 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
         //De Bijenstal
         DB::table('articles')->insert([
             'id' => 999,
-            'page_id' => 8,
+            'page_id' => 9,
             'type' => 'Article',
             'title' => 'De Bijenstal',
             'subtitle' => '',
