@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('pages.home');
 });
 
-Route::get('/activiteiten', function () {
-    return view('pages.activiteiten');
-});
+Route::get('activiteiten', 'activiteitenController@getContent');
 
 Route::get('/agenda', function () {
     return view('pages.agenda');
@@ -27,9 +25,8 @@ Route::get('/bijengezondheid', function () {
     return view('pages.bijengezondheid');
 });
 
-Route::get('/bijenstal', function () {
-    return view('pages.bijenstal');
-});
+Route::get('bijenstal', 'bijenstalController@getContent');
+
 
 Route::get('/contact', function () {
     return view('pages.contact');
@@ -65,4 +62,8 @@ Route::get('/zwermgezien', function () {
 
 Route::get('/stretselaar', function () {
     return view('pages.stretselaar');
+});
+
+Route::get('/adminpanel', function () {
+    return view('pages.cms');
 });
