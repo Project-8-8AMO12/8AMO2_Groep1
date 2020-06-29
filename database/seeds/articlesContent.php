@@ -150,7 +150,7 @@ class articlesContent extends Seeder
         //Activiteiten
 
         DB::table('articles')->insert([
-            'id' => 201,
+            'id' => 11,
             'page_id' => 2,
             'type' => 'Article',
             'title' => 'Vinden en delen',
@@ -166,7 +166,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 202,
+            'id' => 12,
             'page_id' => 3,
             'type' => 'Article',
             'title' => 'Wil je ook de wereld van de bijenteelt leren kennen?',
@@ -182,7 +182,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
 
         // Cursussen
         DB::table('articles')->insert([
-            'id' => 301,
+            'id' => 13,
             'page_id' => 3,
             'type' => 'Article',
             'title' => 'Basiscursus bijenteelt 2020',
@@ -199,7 +199,7 @@ Verder ontvangen cursisten tijdens de cursus het tijdschrift ‘Bijen houden’ 
         ]);
 
         DB::table('articles')->insert([
-            'id' => 302,
+            'id' => 14,
             'page_id' => 3,
             'type' => 'Article',
             'title' => '',
@@ -214,7 +214,7 @@ Kosten van de Basiscursus Bijenteelt zijn € 237,50',
         ]);
 
         DB::table('articles')->insert([
-            'id' => 303,
+            'id' => 15,
             'page_id' => 3,
             'type' => 'Article',
             'title' => 'Cursisten moeten om deze cursus te kunnen volgen in het bezit zijn van:',
@@ -228,7 +228,7 @@ Kosten van de Basiscursus Bijenteelt zijn € 237,50',
         ]);
 
         DB::table('articles')->insert([
-            'id' => 303,
+            'id' => 16,
             'page_id' => 3,
             'type' => 'Alert',
             'title' => 'Wil je ook de wereld van de bijenteelt leren kennen?',
@@ -243,8 +243,8 @@ Kosten van de Basiscursus Bijenteelt zijn € 237,50',
 
         // De Vereniging
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 17,
+            'page_id' => 4,
             'type' => 'Alert',
             'title' => '',
             'subtitle' => '',
@@ -261,8 +261,8 @@ Donateurs ontvangen ‘De Stertselaar’.
         ]);
 
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 18,
+            'page_id' => 4,
             'type' => '',
             'title' => 'Vinden en delen',
             'subtitle' => 'Standplaatsen',
@@ -277,8 +277,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 19,
+            'page_id' => 4,
             'type' => '',
             'title' => 'Het nut van de bijen',
             'subtitle' => '',
@@ -290,8 +290,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 20,
+            'page_id' => 4,
             'type' => '',
             'title' => 'Natuur en milieu',
             'subtitle' => 'Bijenhouden is een echte natuurhobby: voor het imkeren bent u afhankelijk van het weer voor een goede honingoogst. Door het gebruik van chemische gewasbeschermingsmiddelen en het voorkomen van monocultures in de landbouw, zijn veel andere bestuivende insekten uit ons milieu verdwenen. Hun taak wordt nu overgenomen door de honingbij, zodat bijvoorbeeld heesters in plantsoenen dankzij de bijen ‘s winters bessen dragen, en er op die manier voor zorgen dat veel vogelsoorten in onze steden en dorpen kunnen overwinteren. Op hun manier dragen honingbijen dus bij aan de instandhouding van de flora en fauna.',
@@ -305,8 +305,8 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         //Zwerm Gezien?
 
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 21,
+            'page_id' => 5,
             'type' => '',
             'title' => 'Kenmerken voor een bijenzwerm;',
             'subtitle' => '',
@@ -319,8 +319,8 @@ Soms kruipt een zwerm in spouwmuren, schoorstenen en tussen de muren of aftimmer
         ]);
 
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 22,
+            'page_id' => 5,
             'type' => '',
             'title' => 'Hommels',
             'subtitle' => '',
@@ -337,8 +337,8 @@ Zoek op het internet eventueel een plaatje van een honingbij en hommels (er zijn
         ]);
 
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 23,
+            'page_id' => 5,
             'type' => '',
             'title' => 'Wespen',
             'subtitle' => '',
@@ -356,8 +356,8 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
         //Lid Worden
 
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 24,
+            'page_id' => 6,
             'type' => '',
             'title' => '',
             'subtitle' => '',
@@ -369,8 +369,8 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
         ]);
 
         DB::table('articles')->insert([
-            'id' => 401,
-            'page_id' => 3,
+            'id' => 25,
+            'page_id' => 6,
             'type' => '',
             'title' => '',
             'subtitle' => '',
@@ -387,7 +387,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
 
         //De Bijenstal
         DB::table('articles')->insert([
-            'id' => 2,
+            'id' => 999,
             'page_id' => 8,
             'type' => 'Article',
             'title' => 'De Bijenstal',
