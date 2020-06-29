@@ -20,9 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@index');
 
 
-Route::get('/activiteiten', function () {
-    return view('pages.activiteiten');
-});
+Route::get('activiteiten', 'activiteitenController@getContent');
 
 Route::get('/agenda', function () {
     return view('pages.agenda');
@@ -32,9 +30,8 @@ Route::get('/bijengezondheid', function () {
     return view('pages.bijengezondheid');
 });
 
-Route::get('/bijenstal', function () {
-    return view('pages.bijenstal');
-});
+Route::get('bijenstal', 'bijenstalController@getContent');
+
 
 Route::get('/contact', function () {
     return view('pages.contact');
