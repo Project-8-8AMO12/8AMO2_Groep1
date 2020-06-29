@@ -339,7 +339,6 @@ Zoek op het internet eventueel een plaatje van een honingbij en hommels (er zijn
             'edit_permission_lvl' => 1,
             'created_at' => $date,
             'updated_at' => $date,
-            'pos' => '2'
         ]);
 
         DB::table('articles')->insert([
