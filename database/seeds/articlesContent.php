@@ -20,6 +20,7 @@ class articlesContent extends Seeder
             'img_url' => '/img/picture_1.png',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
+            'pos' => 1,
             'created_at' => $date,
             'updated_at' => $date
         ]);
@@ -34,6 +35,7 @@ class articlesContent extends Seeder
             'img_url' => '',
             'author' => 'Steven Kluft',
             'edit_permission_lvl' => 1,
+            'pos' => 2,
             'created_at' => $date,
             'updated_at' => $date
         ]);
@@ -48,6 +50,7 @@ class articlesContent extends Seeder
             'img_url' => '',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
+            'pos' => 3,
             'created_at' => $date,
             'updated_at' => $date
         ]);
@@ -73,6 +76,7 @@ class articlesContent extends Seeder
             'img_url' => '',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
+            'pos' => 4,
             'created_at' => $date,
             'updated_at' => $date
         ]);
@@ -87,6 +91,7 @@ class articlesContent extends Seeder
             'img_url' => 'images/picture_1.png',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
+            'pos' => 5,
             'created_at' => $date,
             'updated_at' => $date
         ]);
@@ -101,6 +106,7 @@ class articlesContent extends Seeder
             'img_url' => 'images/picture_2.png',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
+            'pos' => 6,
             'created_at' => $date,
             'updated_at' => $date
         ]);
@@ -115,6 +121,7 @@ class articlesContent extends Seeder
             'img_url' => 'images/picture_3.png',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
+            'pos' => 7,
             'created_at' => $date,
             'updated_at' => $date
         ]);
@@ -129,6 +136,7 @@ class articlesContent extends Seeder
             'img_url' => 'images/picture_4.png',
             'author' => 'Unknown',
             'edit_permission_lvl' => 1,
+            'pos' => 8,
             'created_at' => $date,
             'updated_at' => $date
         ]);

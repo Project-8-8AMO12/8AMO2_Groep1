@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,7 +17,8 @@
 //    return view('pages.home');
 //});
 
-Route::get('/', 'HomeController@getArticles');
+Route::get('/', 'PagesController@index');
+
 
 Route::get('/activiteiten', function () {
     return view('pages.activiteiten');
@@ -69,6 +72,5 @@ Route::get('/stretselaar', function () {
     return view('pages.stretselaar');
 });
 
-Route::get('/adminpanel', function () {
-    return view('pages.cms');
-});
+Route::get('/adminpanel', 'PagesController@adminpanel');
+Route::post('/adminpanel', 'PagesController@editPost');

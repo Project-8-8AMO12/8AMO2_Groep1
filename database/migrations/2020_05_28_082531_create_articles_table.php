@@ -23,6 +23,7 @@ class CreateArticlesTable extends Migration
             $table->string('img_url');
             $table->string('author');
             $table->integer('edit_permission_lvl');
+            $table->integer('pos');
             $table->timestamps();
         });
     }
