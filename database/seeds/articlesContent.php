@@ -264,7 +264,7 @@ Donateurs ontvangen ‘De Stertselaar’.
         DB::table('articles')->insert([
             'id' => 18,
             'page_id' => 4,
-            'type' => '',
+            'type' => 'Article',
             'title' => 'Vinden en delen',
             'subtitle' => 'Standplaatsen',
             'text' => '
@@ -281,7 +281,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         DB::table('articles')->insert([
             'id' => 19,
             'page_id' => 4,
-            'type' => '',
+            'type' => 'Article',
             'title' => 'Het nut van de bijen',
             'subtitle' => '',
             'text' => 'Honingbijen leveren o.a. was en honing, maar ook bijengif, propolis en dienen als bestuivers van gewassen. Dat is het directe nut van bijen. Bij het verzamelen van nectar en stuifmeel vliegt de bij van bloem naar bloem. Een deel van het stuifmeel blijft hierbij aan het behaarde lichaam en de pootjes kleven en zorgt voor de bestuiving van een volgende bloem. Doordat bijen bloemvast zijn, (ze vliegen op de bloemen van één plantensoort zolang daar voedsel te halen is) zijn ze uitermate geschikt voor de bestuiving van appel, peer, pruim en kers, maar ook voor bramen, aardbeien en bessen. Weet u wel dat 80% van de gewassen worden bestoven door honingbijen? Vooral in kassen moeten bijen ingezet worden voor de bestuiving van paprika en tomaten en bij de zaadteelt. De economische waarde ­‐ geschat op 730 mln Euro ­‐ van de honingbij ligt in de bestuivingsfunktie. De honing opbrengst bedraagt echter slechts 5% van de Nederlandse consumptie. Bijenwas werd in het verleden gebruikt voor verlichting als kaarsen, heden wordt was gebruikt in de cosmetica­‐industrie en als glansmiddel bij veel soorten snoep en drop.',
@@ -295,7 +295,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         DB::table('articles')->insert([
             'id' => 20,
             'page_id' => 4,
-            'type' => '',
+            'type' => 'Article',
             'title' => 'Natuur en milieu',
             'subtitle' => '',
             'text' => 'Bijenhouden is een echte natuurhobby: voor het imkeren bent u afhankelijk van het weer voor een goede honingoogst. Door het gebruik van chemische gewasbeschermingsmiddelen en het voorkomen van monocultures in de landbouw, zijn veel andere bestuivende insekten uit ons milieu verdwenen. Hun taak wordt nu overgenomen door de honingbij, zodat bijvoorbeeld heesters in plantsoenen dankzij de bijen ‘s winters bessen dragen, en er op die manier voor zorgen dat veel vogelsoorten in onze steden en dorpen kunnen overwinteren. Op hun manier dragen honingbijen dus bij aan de instandhouding van de flora en fauna.',
@@ -311,7 +311,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         DB::table('articles')->insert([
             'id' => 21,
             'page_id' => 5,
-            'type' => '',
+            'type' => 'Article',
             'title' => 'Kenmerken voor een bijenzwerm;',
             'subtitle' => '',
             'text' => 'Een bijenzwerm is een grote “bal of tros” met duizenden (tot wel 20.000) honingbijen die aan een voorwerp, bijvoorbeeld een tak, dakgoot of fiets, hangt. Imkers kunnen een bijenzwerm “scheppen” met behulp van een korf of bak. Het is belangrijk dat wij er bij kunnen, eventueel met een ladder (graag zelf voor zorgen, kunnen wij niet meenemen). Als een zwerm onbereikbaar is, dan kunnen we niet “scheppen”.
@@ -326,7 +326,7 @@ Soms kruipt een zwerm in spouwmuren, schoorstenen en tussen de muren of aftimmer
         DB::table('articles')->insert([
             'id' => 22,
             'page_id' => 5,
-            'type' => '',
+            'type' => 'Article',
             'title' => 'Hommels',
             'subtitle' => '',
             'text' => 'Hommels zijn wilde bijen en vaak wat “dikker” en “hariger” dan honingbijen. Hommels nestelen onder andere in vogelhuisjes, voegen en onder de grond. Hommelnesten kunnen niet verplaatst of geschept worden zoals bij zwermen honingbijen. Als imkers kunnen we u daar niet bij helpen. Handig om te weten:
@@ -345,7 +345,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en hommels (er zijn
         DB::table('articles')->insert([
             'id' => 23,
             'page_id' => 5,
-            'type' => '',
+            'type' => 'Article',
             'title' => 'Wespen',
             'subtitle' => '',
             'text' => 'Wespen hebben gele streepjes en zijn meestal dunner dan honingbijen. Wespen zwermen niet. Wespen hangen niet in een tros (zonder nest) in bijvoorbeeld een boom zoals een zwerm bijen. Wespen worden meestal in juli/ augustus waargenomen. Ze nestelen graag in hoekjes, lege ruimtes en holtes. Als imkers kunnen wij niets aan wespen doen. Handig om te weten:
@@ -365,7 +365,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
         DB::table('articles')->insert([
             'id' => 24,
             'page_id' => 6,
-            'type' => '',
+            'type' => 'Article',
             'title' => '',
             'subtitle' => '',
             'text' => 'Een lid van de Imkersvereniging Leiden en omstreken kan meedoen met de activiteiten van de vereniging (zoals imkersavonden), imkersbenodigdheden lenen (zoals slinger en waspers) en ontvangt de nieuwsbrieven. Ook heeft een lid inspraak d.m.v. stemrecht op de algemene leden vergadering. Lid worden van de Imkersvereniging Leiden en omstreken begint met lid worden van de Landelijke imkersvereniging NBV (Nederlandse Bijen Vereniging) met daarbij het lidmaatschap voor de afdeling Leiden. U kunt zich op de website van de NBV inschrijven: https://www.bijenhouders.nl/over-de-nbv/lidmaatschap#aanmeldformulier',
@@ -379,7 +379,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
         DB::table('articles')->insert([
             'id' => 25,
             'page_id' => 6,
-            'type' => '',
+            'type' => 'Article',
             'title' => '',
             'subtitle' => '',
             'text' => 'Mocht u geen lid van de NBV en de afdeling Leiden willen worden, maar de vereniging en haar doelen wel een warm hart toedragen, dan kunt u vanaf 15,- euro per jaar ook donateur worden. U kunt dan meedoen met activiteiten, imkersbenodigdheden lenen en ontvangt nieuwsbrieven. U heeft geen inspraak als lid in de vereniging. Wilt u donateur worden, stuur dan een mail met uw naam, adres en telefoonnummer naar leidsebijen@live.nl en wij zorgen dat u donateur wordt.',
@@ -396,7 +396,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
         DB::table('articles')->insert([
             'id' => 26,
             'page_id' => 7,
-            'type' => '',
+            'type' => 'Article',
             'title' => 'De laatste nieuwtjes',
             'subtitle' => 'Zo blijf je op de hoogte',
             'text' => '
