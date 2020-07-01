@@ -18,56 +18,17 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/', 'PagesController@index');
-
-
-Route::get('activiteiten', 'activiteitenController@getContent');
-
-Route::get('/agenda', function () {
-    return view('pages.agenda');
-});
-
-Route::get('/bijengezondheid', function () {
-    return view('pages.bijengezondheid');
-});
-
-Route::get('bijenstal', 'bijenstalController@getContent');
-
-
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
-
-Route::get('/cursussen', function () {
-    return view('pages.cursussen');
-});
-
-Route::get('/fotosvideos', function () {
-    return view('pages.fotosvideos');
-});
-
-Route::get('/lidworden', function () {
-    return view('pages.lidworden');
-});
-
-Route::get('/nieuws', function () {
-    return view('pages.nieuws');
-});
-
-Route::get('/vereniging', function () {
-    return view('pages.vereniging');
-});
-
-Route::get('/winkel', function () {
-    return view('pages.winkel');
-});
-
-Route::get('/zwermgezien', function () {
-    return view('pages.zwermgezien');
-});
-
-Route::get('/stretselaar', function () {
-    return view('pages.stretselaar');
-});
-
+Route::get('activiteiten', 'PagesController@indexActiviteiten');
+Route::get('bijengezondheid', 'PagesController@Indexbijengezondheid');
+Route::get('bijenstal', 'PagesController@indexBijenstal');
+Route::get('contact', 'PagesController@indexContact');
+Route::get('cursussen', 'PagesController@indexCursussen');
+Route::get('fotosvideos', 'PagesController@indexFotosvideos');
+Route::get('lidworden', 'PagesController@indexLidworden');
+Route::get('nieuws', 'PagesController@indexNieuws');
+Route::get('vereniging', 'PagesController@indexVereniging');
+Route::get('winkel', 'PagesController@indexWinkel');
+Route::get('zwermgezien', 'PagesController@indexZwermgezien');
+Route::get('stretselaar', 'PagesController@indexStretselaar');
 Route::get('/adminpanel', 'PagesController@adminpanel');
 Route::post('/adminpanel', 'PagesController@editPost');

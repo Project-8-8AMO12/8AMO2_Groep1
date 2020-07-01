@@ -75,6 +75,7 @@
                     @endforeach
                 </div>
                 <button type="submit" name="submit-edit" class="btn btn-primary mt-4">Bewerk</button>
+                <button type="submit" name="submit-delete" class="btn btn-danger mt-4 ml-5">Delete Last</button>
             </form>
         </div>
         {{--        Aritkel--}}

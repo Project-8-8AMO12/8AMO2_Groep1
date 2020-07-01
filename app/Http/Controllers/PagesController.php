@@ -14,20 +14,57 @@ class PagesController extends Controller
 {
 
     public function index(){
+    $articles = articles::getArticles(1);
+    return view('pages.home')->with("articles", $articles);
+}
 
-        // Read value from Model method
-        $articles = articles::getArticles(1);
+    public function indexActiviteiten(){
+        $articles = articles::getArticles(2);
+        return view('pages.activiteiten')->with("articles", $articles);
+    }
 
-        // Pass to view
-        return view('pages.home')->with("articles", $articles);
+    public function Indexbijengezondheid(){
+        $articles = articles::getArticles(3);
+        return view('pages.bijengezondheid')->with("articles", $articles);
+    }
+
+    public function indexBijenstal(){
+        $articles = articles::getArticles(4);
+        return view('pages.bijenstal')->with("articles", $articles);
+    }
+
+    public function indexContact(){
+        $articles = articles::getArticles(5);
+        return view('pages.contact')->with("articles", $articles);
+    }
+
+    public function indexCursussen(){
+        $articles = articles::getArticles(6);
+        return view('pages.cursussen')->with("articles", $articles);
+    }
+
+    public function indexFotosvideos(){
+        $articles = articles::getArticles(7);
+        return view('pages.fotosvideos')->with("articles", $articles);
+    }
+
+    public function indexLidworden(){
+        $articles = articles::getArticles(8);
+        return view('pages.lidworden')->with("articles", $articles);
+    }
+
+    public function indexNieuws(){
+        $articles = articles::getArticles(9);
+        return view('pages.nieuws')->with("articles", $articles);
+    }
+
+    public function indexVereniging(){
+        $articles = articles::getArticles(10);
+        return view('pages.vereniging')->with("articles", $articles);
     }
 
     public function adminpanel(){
-
-        // Read value from Model method
         $articles = articles::getAllArticles();
-
-        // Pass to view
         return view('pages.cms')->with("articles", $articles);
     }
 
@@ -35,7 +72,7 @@ class PagesController extends Controller
 
         if ($request->has('submit-edit')) {
 
-            $size = count(collect($request)->get('title'));
+            $size = count(collect($request)->get('id'));
             for ($i = 0; $i < $size; $i++)
             {
                 $article = articles::Find($request->get('id')[$i]);
@@ -53,7 +90,15 @@ class PagesController extends Controller
         }
 
         if ($request->has('submit-delete')) {
-            return $request->all();
+
+            $size= count(collect($request)->get('id'));
+            $offset = $size - 1;
+
+            $article = articles::Find($request->get('id')[$offset]);
+            $article->delete();
+
+            $articles = articles::getAllArticles();
+            return view('pages.cms')->with("articles", $articles);
         }
 
         if ($request->has('submit-artikel') || $request->has('submit-alert')) {
@@ -65,6 +110,7 @@ class PagesController extends Controller
 
             $pageId = $request->input('page_id');
             $titel = $request->input('titel');
+            $id = $request->input('id');
             $subtitel = $request->input('subtitel');
             $content = $request->input('text');
             $author = "comming soon";
