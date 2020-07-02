@@ -115,9 +115,11 @@ class PagesController extends Controller
 
     public function editPost(Request $request){
 
+
         if ($request->has('submit-edit')) {
 
             $size = count(collect($request)->get('id'));
+            
             for ($i = 0; $i < $size; $i++)
             {
                 $article = articles::Find($request->get('id')[$i]);
@@ -135,11 +137,7 @@ class PagesController extends Controller
         }
 
         if ($request->has('submit-delete')) {
-
-            $size= count(collect($request)->get('id'));
-            $offset = $size - 1;
-
-            $article = articles::Find($request->get('id')[$offset]);
+            $article = articles::Find($request->get('submit-delete'));
             $article->delete();
 
             $articles = articles::getAllArticles();

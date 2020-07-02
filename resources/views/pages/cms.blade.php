@@ -64,6 +64,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Content</span>
                                 </div>
+                                <button type="submit" name="submit-delete" value="{{$article->id}}" class="btn btn-danger">Delete Last</button>
                                 <input style="display: none" name="position[]" type="number" value="{{$article->pos}}">
                                 <input style="display: none" name="page_id[]" type="number" value="{{$article->page_id}}">
                                 <input style="display: none" name="id[]" type="number" value="{{$article->id}}">
@@ -75,7 +76,6 @@
                     @endforeach
                 </div>
                 <button type="submit" name="submit-edit" class="btn btn-primary mt-4">Bewerk</button>
-                <button type="submit" name="submit-delete" class="btn btn-danger mt-4 ml-5">Delete Last</button>
             </form>
         </div>
         {{--        Aritkel--}}
@@ -185,7 +185,7 @@
 
             draggables.forEach(draggable => {
                 draggable.addEventListener('dragstart', () => {
-                    draggable.classList.add('dragging')
+                    draggable.classList.add('dragging');
                 })
 
                 draggable.addEventListener('dragend', () => {
@@ -196,15 +196,15 @@
 
             containers.forEach(container => {
                 container.addEventListener('dragover', e => {
-                    e.preventDefault()
+                    e.preventDefault();
 
-                    const afterElement = getDragAfterElement(container, e.clientY)
-                    const draggable = document.querySelector('.dragging')
+                    const afterElement = getDragAfterElement(container, e.clientY);
+                    const draggable = document.querySelector('.dragging');
 
                     if (afterElement == null) {
-                        container.appendChild(draggable)
+                        container.appendChild(draggable);
                     } else {
-                        container.insertBefore(draggable, afterElement)
+                        container.insertBefore(draggable, afterElement);
                     }
 
                 })
@@ -214,14 +214,14 @@
                 const draggableElements = [...container.querySelectorAll('.draggable:not(.dragging)')]
 
                 return draggableElements.reduce((closest, child) => {
-                    const box = child.getBoundingClientRect()
-                    const offset = y - box.top - box.height / 2
+                    const box = child.getBoundingClientRect();
+                    const offset = y - box.top - box.height / 2;
                     if (offset < 0 && offset > closest.offset) {
                         return { offset: offset, element: child }
                     } else {
-                        return closest
+                        return closest;
                     }
-                }, { offset: Number.NEGATIVE_INFINITY }).element
+                }, { offset: Number.NEGATIVE_INFINITY }).element;
             }
 
             function setPos() {
@@ -229,8 +229,13 @@
                 let b = Array.from(a);
                 let c = 1;
                 b.forEach((item) => {
+                    let content = item.childNodes;
+                    // console.log(content[3].value);
                     item.setAttribute('pos', c);
+                    let d = item.childNodes[3];
+                    d.setAttribute('value', c);
                     c++;
+                    console.log(d.value);
                 });
             }
         </script>
