@@ -173,25 +173,10 @@ class articlesContent extends Seeder
             'pos' => '2'
         ]);
 
-        DB::table('articles')->insert([
-            'id' => 11,
-            'page_id' => 2,
-            'type' => 'Article',
-            'title' => 'Wil je ook de wereld van de bijenteelt leren kennen?',
-            'subtitle' => '',
-            'text' => 'Meld u aan door te mailen naar <a href="mailto:leidsebijen@live.nl">leidsebijen@live.nl</a> tav Roland Koster.',
-            'img_url' => 'https://www.imkersleiden.nl/wp-content/uploads/2019/07/bijenkasten.jpg',
-            'author' => 'Steven Kluft',
-            'edit_permission_lvl' => 1,
-            'created_at' => $date,
-            'updated_at' => $date,
-            'pos' => '2'
-        ]);
-
 
         // Cursussen
         DB::table('articles')->insert([
-            'id' => 12,
+            'id' => 11,
             'page_id' => 3,
             'type' => 'Article',
             'title' => 'Basiscursus bijenteelt 2020',
@@ -209,7 +194,7 @@ Verder ontvangen cursisten tijdens de cursus het tijdschrift ‘Bijen houden’ 
         ]);
 
         DB::table('articles')->insert([
-            'id' => 13,
+            'id' => 12,
             'page_id' => 3,
             'type' => 'Article',
             'title' => 'Rooster Basiscursus Bijenteelt – Leiden',
@@ -224,7 +209,7 @@ Verder ontvangen cursisten tijdens de cursus het tijdschrift ‘Bijen houden’ 
         ]);
 
         DB::table('articles')->insert([
-            'id' => 14,
+            'id' => 13,
             'page_id' => 3,
             'type' => 'Article',
             'title' => '',
@@ -240,7 +225,7 @@ De praktijk (P)-lessen worden gegeven van 18.00 uur tot 20.00 uur behalve voor P
         ]);
 
         DB::table('articles')->insert([
-            'id' => 15,
+            'id' => 14,
             'page_id' => 3,
             'type' => 'Article',
             'title' => 'Cursisten moeten om deze cursus te kunnen volgen in het bezit zijn van:',
@@ -254,7 +239,7 @@ De praktijk (P)-lessen worden gegeven van 18.00 uur tot 20.00 uur behalve voor P
         ]);
 
         DB::table('articles')->insert([
-            'id' => 16,
+            'id' => 15,
             'page_id' => 3,
             'type' => 'Alert',
             'title' => 'Wil je ook de wereld van de bijenteelt leren kennen?',
@@ -270,7 +255,7 @@ De praktijk (P)-lessen worden gegeven van 18.00 uur tot 20.00 uur behalve voor P
 
         // De Vereniging
         DB::table('articles')->insert([
-            'id' => 17,
+            'id' => 16,
             'page_id' => 4,
             'type' => 'Alert',
             'title' => '',
@@ -289,7 +274,7 @@ Donateurs ontvangen ‘De Stertselaar’.
         ]);
 
         DB::table('articles')->insert([
-            'id' => 18,
+            'id' => 17,
             'page_id' => 4,
             'type' => 'Article',
             'title' => 'Standplaatsen',
@@ -306,7 +291,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 19,
+            'id' => 18,
             'page_id' => 4,
             'type' => 'Article',
             'title' => 'Waarom doen we het?',
@@ -320,7 +305,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 20,
+            'id' => 19,
             'page_id' => 4,
             'type' => 'Article',
             'title' => 'Het nut van de bijen',
@@ -334,7 +319,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 21,
+            'id' => 20,
             'page_id' => 4,
             'type' => 'Article',
             'title' => 'Natuur en milieu',
@@ -348,7 +333,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 22,
+            'id' => 21,
             'page_id' => 4,
             'type' => 'Article',
             'title' => 'Natuur en milieu',
@@ -362,7 +347,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 23,
+            'id' => 22,
             'page_id' => 4,
             'type' => 'Article',
             'title' => 'Tips voor toekomstige bijenhouders',
@@ -376,7 +361,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         ]);
 
         DB::table('articles')->insert([
-            'id' => 24,
+            'id' => 23,
             'page_id' => 4,
             'type' => 'Article',
             'title' => 'Tips voor de niet-­bijenhouders',
@@ -392,7 +377,7 @@ Zoekt u een plaats voor uw bijenvolken of weet u een plek voor een ander? Neem d
         //Zwerm Gezien?
 
         DB::table('articles')->insert([
-            'id' => 25,
+            'id' => 24,
             'page_id' => 5,
             'type' => 'Article',
             'title' => 'Kenmerken voor een bijenzwerm;',
@@ -407,7 +392,7 @@ Soms kruipt een zwerm in spouwmuren, schoorstenen en tussen de muren of aftimmer
         ]);
 
         DB::table('articles')->insert([
-            'id' => 26,
+            'id' => 25,
             'page_id' => 5,
             'type' => 'Article',
             'title' => 'Hommels',
@@ -426,7 +411,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en hommels (er zijn
         ]);
 
         DB::table('articles')->insert([
-            'id' => 27,
+            'id' => 26,
             'page_id' => 5,
             'type' => 'Article',
             'title' => 'Wespen',
@@ -446,7 +431,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
         //Lid Worden
 
         DB::table('articles')->insert([
-            'id' => 28,
+            'id' => 27,
             'page_id' => 6,
             'type' => 'Article',
             'title' => '',
@@ -460,7 +445,7 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
         ]);
 
         DB::table('articles')->insert([
-            'id' => 29,
+            'id' => 28,
             'page_id' => 6,
             'type' => 'Article',
             'title' => '',
@@ -477,8 +462,8 @@ Zoek op het internet eventueel een plaatje van een honingbij en wespen.',
 
         //Nieuws
         DB::table('articles')->insert([
-            'id' => 30,
-            'page_id' => 7,
+            'id' => 29,
+            'page_id' => 8,
             'type' => 'Article',
             'title' => 'De laatste nieuwtjes',
             'subtitle' => 'Zo blijf je op de hoogte',
@@ -495,7 +480,7 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
 
         //De Bijenstal
         DB::table('articles')->insert([
-            'id' => 31,
+            'id' => 30,
             'page_id' => 9,
             'type' => 'Side_img_card',
             'title' => 'De Bijenstal',
@@ -512,7 +497,7 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
 
         //De Winkel
         DB::table('articles')->insert([
-            'id' => 32,
+            'id' => 31,
             'page_id' => 10,
             'type' => 'Article',
             'title' => 'De Imkersvereniging',
@@ -527,7 +512,7 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
         ]);
 
         DB::table('articles')->insert([
-            'id' => 33,
+            'id' => 32,
             'page_id' => 10,
             'type' => 'Article',
             'title' => 'zBijenwas recyclen:',
@@ -542,7 +527,7 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
         ]);
 
         DB::table('articles')->insert([
-            'id' => 34,
+            'id' => 33,
             'page_id' => 10,
             'type' => 'Article',
             'title' => 'Honingslingeren:',
@@ -557,7 +542,7 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
         ]);
 
         DB::table('articles')->insert([
-            'id' => 35,
+            'id' => 34,
             'page_id' => 10,
             'type' => 'Article',
             'title' => 'Openingstijden & adres:',
@@ -573,7 +558,7 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
 
         //fotos en videos
         DB::table('articles')->insert([
-            'id' => 36,
+            'id' => 35,
             'page_id' => 12,
             'type' => 'Video',
             'title' => '',

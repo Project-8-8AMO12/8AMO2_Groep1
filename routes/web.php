@@ -18,11 +18,7 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/', 'PagesController@index');
-
-Route::get('/agenda', function () {
-    return view('pages.agenda');
-});
-
+Route::get('agenda', 'PagesController@indexAgenda');
 Route::get('activiteiten', 'PagesController@activiteitenArticles');
 Route::get('bijengezondheid', 'PagesController@Indexbijengezondheid');
 Route::get('bijenstal', 'PagesController@bijenstalArticles');

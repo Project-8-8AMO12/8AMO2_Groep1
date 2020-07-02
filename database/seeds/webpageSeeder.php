@@ -146,5 +146,14 @@ class webpageSeeder extends Seeder
             'updated_at' => $date
         ]);
 
+        DB::table('webpages')->insert([
+            'page_id' => 14,
+            'type' => 'article',
+            'editable' => 1,
+            'title' => 'Zwermgezien',
+            'subtitle' => 'Zwermgezien',
+            'created_at' => $date,
+            'updated_at' => $date
+        ]);
     }
 }

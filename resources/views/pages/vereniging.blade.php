@@ -5,11 +5,7 @@
 
 @section("body")
     <div class="container">
-<<<<<<< HEAD
         <h1 class="text-white">De vereniging</h1>
-=======
-        <h1 class="text-white">Vereniging</h1>
->>>>>>> 68bd95d0963f924d8b611e44568e78bef16bd81c
         @foreach($articles as $article)
             @if($article->type === 'Alert')
                 <div class="card text-black-50 bg-warning mb-3">

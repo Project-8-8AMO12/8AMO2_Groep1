@@ -18,27 +18,13 @@ class PagesController extends Controller
         return view('pages.home')->with("articles", $articles);
     }
 
-    public function Indexbijengezondheid(){
-        $articles = articles::getArticles(3);
-        return view('pages.bijengezondheid')->with("articles", $articles);
-    }
-
-    public function bijenstalArticles(){
+    public function activiteitenArticles(){
 
         // Read value from Model method
-        $articles = articles::getArticles(9);
+        $articles = articles::getArticles(2);
 
         // Pass to view
-        return view('pages.bijenstal')->with("articles", $articles);
-    }
-
-    public function verenigingArticles(){
-
-        // Read value from Model method
-        $articles = articles::getArticles(4);
-
-        // Pass to view
-        return view('pages.vereniging')->with("articles", $articles);
+        return view('pages.activiteiten')->with("articles", $articles);
     }
 
     public function cursussenArticles(){
@@ -50,6 +36,45 @@ class PagesController extends Controller
         return view('pages.cursussen')->with("articles", $articles);
     }
 
+
+    public function verenigingArticles(){
+
+        // Read value from Model method
+        $articles = articles::getArticles(4);
+
+        // Pass to view
+        return view('pages.vereniging')->with("articles", $articles);
+    }
+
+    public function indexZwermgezien(){
+        $articles = articles::getArticles(5);
+        return view('pages.zwermgezien')->with("articles", $articles);
+    }
+
+    public function indexLidworden(){
+        $articles = articles::getArticles(6);
+        return view('pages.lidworden')->with("articles", $articles);
+    }
+
+    public function indexAgenda(){
+        $articles = articles::getArticles(7);
+        return view('pages.agenda')->with("articles", $articles);
+    }
+
+    public function indexNieuws(){
+        $articles = articles::getArticles(8);
+        return view('pages.nieuws')->with("articles", $articles);
+    }
+
+    public function bijenstalArticles(){
+
+        // Read value from Model method
+        $articles = articles::getArticles(9);
+
+        // Pass to view
+        return view('pages.bijenstal')->with("articles", $articles);
+    }
+
     public function winkelArticles(){
 
         // Read value from Model method
@@ -57,6 +82,11 @@ class PagesController extends Controller
 
         // Pass to view
         return view('pages.winkel')->with("articles", $articles);
+    }
+
+    public function indexStretselaar(){
+        $articles = articles::getArticles(11);
+        return view('pages.stretselaar')->with("articles", $articles);
     }
 
     public function fotosvideosArticles(){
@@ -68,28 +98,14 @@ class PagesController extends Controller
         return view('pages.fotosvideos')->with("articles", $articles);
     }
 
-    public function activiteitenArticles(){
-
-        // Read value from Model method
-        $articles = articles::getArticles(2);
-
-        // Pass to view
-        return view('pages.activiteiten')->with("articles", $articles);
-    }
-
     public function indexContact(){
-        $articles = articles::getArticles(5);
+        $articles = articles::getArticles(13);
         return view('pages.contact')->with("articles", $articles);
     }
 
-    public function indexLidworden(){
-        $articles = articles::getArticles(8);
-        return view('pages.lidworden')->with("articles", $articles);
-    }
-
-    public function indexNieuws(){
-        $articles = articles::getArticles(9);
-        return view('pages.nieuws')->with("articles", $articles);
+    public function Indexbijengezondheid(){
+        $articles = articles::getArticles(14);
+        return view('pages.bijengezondheid')->with("articles", $articles);
     }
 
     public function adminpanel(){
