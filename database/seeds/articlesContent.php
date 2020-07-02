@@ -414,7 +414,7 @@ Tijdens de controle begin januari bleek één volk het niet overleefd te hebben,
         DB::table('articles')->insert([
             'id' => 999,
             'page_id' => 9,
-            'type' => 'Article',
+            'type' => 'Side_img_card',
             'title' => 'De Bijenstal',
             'subtitle' => '',
             'text' => 'De bijenstal in polderpark Cronesteyn is geopend op de eerste zondag van de maand vanaf begin april tot eind september, van 14h00 tot 15h00. Voor iedereen die een kijkje in de kast wil nemen.

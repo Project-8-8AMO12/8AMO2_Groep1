@@ -20,6 +20,60 @@ class PagesController extends Controller
         return view('pages.home')->with("articles", $articles);
     }
 
+    public function bijenstalArticles(){
+
+        // Read value from Model method
+        $articles = articles::getArticles(9);
+
+        // Pass to view
+        return view('pages.bijenstal')->with("articles", $articles);
+    }
+
+    public function verenigingArticles(){
+
+        // Read value from Model method
+        $articles = articles::getArticles(4);
+
+        // Pass to view
+        return view('pages.vereniging')->with("articles", $articles);
+    }
+
+    public function cursussenArticles(){
+
+        // Read value from Model method
+        $articles = articles::getArticles(3);
+
+        // Pass to view
+        return view('pages.cursussen')->with("articles", $articles);
+    }
+
+    public function winkelArticles(){
+
+        // Read value from Model method
+        $articles = articles::getArticles(10);
+
+        // Pass to view
+        return view('pages.winkel')->with("articles", $articles);
+    }
+
+    public function fotosvideosArticles(){
+
+        // Read value from Model method
+        $articles = articles::getArticles(12);
+
+        // Pass to view
+        return view('pages.fotosvideos')->with("articles", $articles);
+    }
+
+    public function activiteitenArticles(){
+
+        // Read value from Model method
+        $articles = articles::getArticles(10);
+
+        // Pass to view
+        return view('pages.activiteiten')->with("articles", $articles);
+    }
+
     public function adminpanel(){
 
         // Read value from Model method

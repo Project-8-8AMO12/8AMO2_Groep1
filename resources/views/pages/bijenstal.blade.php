@@ -1,31 +1,48 @@
 @extends('pages.components.main')
 
-@section('title', 'Bijenstal')
+@section('title', 'De Bijenstal')
 
 
 @section("body")
-        <div class="container" style="margin: 50px auto 25px auto;">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-12">
-                        <h1 class="text-warning font-weight-bold">{{ $article[0]->title }}</h1>
+    <div class="container">
+        <h1 class="text-white">De Bijenstal</h1>
+        @foreach($articles as $article)
+            @if($article->type === 'Alert')
+                <div class="card text-black-50 bg-warning mb-3">
+                    <div class="card-header">Alert</div>
+                    <div class="card-body">
+                        <h5 class="card-title text-black">{{ $article->title }}</h5>
+                        <p class="card-text">{!! $article->text !!}</p>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-12">
-                        <p class="text-white" style="font-size: 1.6em;">{{ $article[0]->text }}
-                        </p>
+            @endif
+            @if($article->type === 'Article')
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $article->title }}</h5>
+                        @if(!empty($article->subtitle))
+                            <h6 class="card-subtitle mb-2 text-muted">{{ $article->subtitle }}</h6>
+                        @endif
+                        <p class="card-text">{!! $article->text !!}</p>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container" style="margin: 25px auto;">
-            <div class="row">
-                <img class="col-md-12 rounded" src="https://www.imkersleiden.nl/wp-content/uploads/2020/01/image002.png" alt="">
-            </div>
-        </div>
+            @endif
+            @if($article->type === 'Side_img_card')
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="{{ asset($article->img_url) }}" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $article->title }}</h5>
+                                <p class="card-text">{!! $article->text !!}</p>
+                                <p class="card-text"><small class="text-muted">{{ $article->updated_at }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endif
+        @endforeach
+    </div>
 @stop

@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@index');
 
 
-Route::get('activiteiten', 'activiteitenController@getContent');
+Route::get('activiteiten', 'PagesController@activiteitenArticles');
 
 Route::get('/agenda', function () {
     return view('pages.agenda');
@@ -30,20 +30,16 @@ Route::get('/bijengezondheid', function () {
     return view('pages.bijengezondheid');
 });
 
-Route::get('bijenstal', 'bijenstalController@getContent');
+Route::get('/bijenstal', 'PagesController@bijenstalArticles');
 
 
 Route::get('/contact', function () {
     return view('pages.contact');
 });
 
-Route::get('/cursussen', function () {
-    return view('pages.cursussen');
-});
+Route::get('/cursussen', 'PagesController@cursussenArticles');
 
-Route::get('/fotosvideos', function () {
-    return view('pages.fotosvideos');
-});
+Route::get('/fotosvideos', 'PagesController@fotosvideosArticles');
 
 Route::get('/lidworden', function () {
     return view('pages.lidworden');
@@ -53,13 +49,9 @@ Route::get('/nieuws', function () {
     return view('pages.nieuws');
 });
 
-Route::get('/vereniging', function () {
-    return view('pages.vereniging');
-});
+Route::get('/vereniging', 'PagesController@verenigingArticles');
 
-Route::get('/winkel', function () {
-    return view('pages.winkel');
-});
+Route::get('/winkel', 'PagesController@winkelArticles');
 
 Route::get('/zwermgezien', function () {
     return view('pages.zwermgezien');
