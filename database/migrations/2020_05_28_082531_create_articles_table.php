@@ -15,14 +15,15 @@ class CreateArticlesTable extends Migration
     {
         Schema::create('articles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('page_id')->unsigned();
+            $table->bigInteger('page_id')->nullable()->unsigned();
             $table->string('type');
-            $table->string('title');
-            $table->string('subtitle');
-            $table->string('text', 4096);
-            $table->string('img_url');
+            $table->string('title')->nullable();
+            $table->string('subtitle')->nullable();
+            $table->string('text', 4096)->nullable();
+            $table->string('img_url')->nullable();
             $table->string('author');
             $table->integer('edit_permission_lvl');
+            $table->integer('pos');
             $table->timestamps();
         });
     }
