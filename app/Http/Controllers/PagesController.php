@@ -68,7 +68,7 @@ class PagesController extends Controller
     public function activiteitenArticles(){
 
         // Read value from Model method
-        $articles = articles::getArticles(10);
+        $articles = articles::getArticles(2);
 
         // Pass to view
         return view('pages.activiteiten')->with("articles", $articles);
