@@ -5,7 +5,11 @@
 
 @section("body")
     <div class="container">
+<<<<<<< HEAD
         <h1 class="text-white">De Bijenstal</h1>
+=======
+        <h1 class="text-white">Bijenstal</h1>
+>>>>>>> 68bd95d0963f924d8b611e44568e78bef16bd81c
         @foreach($articles as $article)
             @if($article->type === 'Alert')
                 <div class="card text-black-50 bg-warning mb-3">
@@ -24,6 +28,7 @@
                             <h6 class="card-subtitle mb-2 text-muted">{{ $article->subtitle }}</h6>
                         @endif
                         <p class="card-text">{!! $article->text !!}</p>
+<<<<<<< HEAD
                     </div>
                 </div>
             @endif
@@ -45,4 +50,28 @@
             @endif
         @endforeach
     </div>
+=======
+                    </div>
+                </div>
+            @endif
+            @if($article->type === 'Side_img_card')
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="{{ asset($article->img_url) }}" class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{ $article->title }}</h5>
+                                <p class="card-text">{!! $article->text !!}</p>
+                                <p class="card-text"><small class="text-muted">{{ $article->updated_at }}</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            @endif
+        @endforeach
+    </div>
+
+>>>>>>> 68bd95d0963f924d8b611e44568e78bef16bd81c
 @stop

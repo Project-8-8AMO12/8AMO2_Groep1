@@ -1,5 +1,7 @@
 @extends('pages.components.main')
 
+@csrf
+
 @section("body")
     <div class="container">
     <div class="mt-3">
@@ -58,16 +60,22 @@
                 <div class="drag-container">
                     @foreach($articles as $article)
                         @if($article->page_id == $current_url)
-                            <div class="input-group mt-3 draggable" pos="{{ $article->pos }}" draggable="true">
+                            <div class="input-group mt-3 draggable row" pos="{{ $article->pos }}" draggable="true">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text">Content</span>
                                 </div>
-                                <textarea class="form-control" draggable="true" ondragstart="drag(event)" id="drag1">{{ $article->text }}</textarea>
+                                <input style="display: none" name="position[]" type="number" value="{{$article->pos}}">
+                                <input style="display: none" name="page_id[]" type="number" value="{{$article->page_id}}">
+                                <input style="display: none" name="id[]" type="number" value="{{$article->id}}">
+                                <input class="col-3" type="text" name="title[]" value="{{$article->title}}" placeholder="title">
+                                <input class="col-3" type="text" name="subtitle[]" value="{{$article->subtitle}}" placeholder="subtitle">
+                                <textarea class="form-control" draggable="true" name="text[]" ondragstart="drag(event)" id="drag1" placeholder="text">{{ $article->text }}</textarea>
                             </div>
                         @endif
                     @endforeach
                 </div>
                 <button type="submit" name="submit-edit" class="btn btn-primary mt-4">Bewerk</button>
+                <button type="submit" name="submit-delete" class="btn btn-danger mt-4 ml-5">Delete Last</button>
             </form>
         </div>
         {{--        Aritkel--}}
