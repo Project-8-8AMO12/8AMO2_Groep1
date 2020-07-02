@@ -45,8 +45,4 @@
             @endif
         @endforeach
     </div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 68bd95d0963f924d8b611e44568e78bef16bd81c
 @stop
